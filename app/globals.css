@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --background: #f8f9fa;
+  --foreground: #171717;
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  --danger-gradient: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+  --info-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* ========== Animations ========== */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ========== Form Styling ========== */
+.form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background-color: #fff;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* ========== Button Styling ========== */
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  background: var(--primary-gradient);
+  color: white;
+}
+
+.btn-danger {
+  background: var(--danger-gradient);
+  color: white;
+  box-shadow: 0 4px 15px rgba(235, 51, 73, 0.4);
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(235, 51, 73, 0.6);
+  background: var(--danger-gradient);
+  color: white;
+}
+
+.btn-success {
+  background: var(--success-gradient);
+  color: white;
+  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(17, 153, 142, 0.6);
+  background: var(--success-gradient);
+  color: white;
+}
+
+.btn-sm {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ========== Card Styling ========== */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 20px;
+  font-weight: 600;
+}
+
+/* ========== Table Styling ========== */
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #f0f2f5;
+  border: none;
+  padding: 16px;
+  font-weight: 700;
+  color: #2d3748;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.table tbody td {
+  padding: 16px;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* ========== Badge Styling ========== */
+.badge {
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.badge.bg-success {
+  background: var(--success-gradient) !important;
+}
+
+.badge.bg-warning {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+
+.badge.bg-danger {
+  background: var(--danger-gradient) !important;
+}
+
+/* ========== Modal Styling ========== */
+.modal-content {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 24px;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e9ecef;
+}
+
+/* ========== Alert Styling ========== */
+.alert {
+  border: none;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  animation: slideInDown 0.3s ease;
+  font-weight: 500;
+}
+
+.alert-success {
+  background: rgba(17, 153, 142, 0.1);
+  color: #0d6e5e;
+  border-left: 4px solid #11998e;
+}
+
+.alert-danger {
+  background: rgba(235, 51, 73, 0.1);
+  color: #8b1a1a;
+  border-left: 4px solid #eb3349;
+}
+
+.alert-warning {
+  background: rgba(255, 159, 64, 0.1);
+  color: #8b6914;
+  border-left: 4px solid #ff9f40;
+}
+
+.alert-info {
+  background: rgba(79, 172, 254, 0.1);
+  color: #0052a3;
+  border-left: 4px solid #4facfe;
+}
+
+/* ========== Navbar Styling ========== */
+.navbar {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%) !important;
+  padding: 16px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: -0.5px;
+}
+
+.navbar-text {
+  font-weight: 500;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #2d3748;
+  border-color: white;
+}
+
+/* ========== Footer Styling ========== */
+footer {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  margin-top: auto;
+}
+
+footer h5 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* ========== Container & Layout ========== */
+.container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.min-vh-100 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== Text & Typography ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #1a202c;
+  letter-spacing: -0.5px;
+}
+
+.text-muted {
+  color: #718096 !important;
+}
+
+/* ========== Utility Classes ========== */
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+.slide-in-up {
+  animation: slideInUp 0.5s ease;
+}
+
+.shadow-lg {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 16px;
+  }
+  
+  .form-control {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+  
+  .table {
+    font-size: 13px;
+  }
+  
+  .table thead th,
+  .table tbody td {
+    padding: 12px;
+  }
+}
