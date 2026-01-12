@@ -39,8 +39,8 @@ export default function UserPage() {
         <div className="container-fluid">
           <div className="mb-5 fade-in">
             <div style={{ fontSize: '36px', marginBottom: '12px' }}>👤</div>
-            <h1 className="h2 fw-bold mb-2">User Dashboard</h1>
-            <p className="text-muted">ข้อมูลส่วนตัวและการจัดการบัญชี</p>
+                <h1 className="h2 fw-bold mb-2" style={{ color: '#764ba2' }}>User Dashboard</h1>
+                <p className="text-muted">ข้อมูลส่วนตัวและการจัดการบัญชี</p>
           </div>
 
           <div className="row">

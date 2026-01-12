@@ -83,9 +83,6 @@ export default function SignUpPage() {
         <hr className="my-4" />
 
         <div className="text-center">
-          <p className="small text-muted mb-3">
-            มีบัญชีแล้ว? <Link href="/signin" className="text-decoration-none fw-bold" style={{ color: '#f5576c' }}>เข้าสู่ระบบ</Link>
-          </p>
           <Link href="/" className="text-decoration-none small" style={{ color: '#f5576c' }}>← กลับหน้าหลัก</Link>
         </div>
       </form>

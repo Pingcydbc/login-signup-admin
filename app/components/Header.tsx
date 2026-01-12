@@ -11,7 +11,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-dark shadow-lg" style={{ background: 'linear-gradient(135deg, #2d3748 0%, #1a202c 100%)' }}>
         <div className="container-fluid">
           <Link href="/" className="navbar-brand fw-bold" style={{ fontSize: '20px', letterSpacing: '-0.5px' }}>
-            🔐 Auth App
+            🔐 Chayodom Auth
           </Link>
           
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

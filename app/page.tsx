@@ -11,10 +11,10 @@ export default async function Home() {
       <div className="text-center mb-5 fade-in">
         <div style={{ fontSize: '64px', marginBottom: '20px' }}>🔐</div>
         <h1 className="fw-bold mb-2" style={{ fontSize: '48px', color: 'white' }}>
-          Auth System
+          Chayodom Login System
         </h1>
         <p className="lead" style={{ color: 'rgba(255,255,255,0.9)' }}>
-          Next.js + NextAuth + Prisma
+          Next.js + NextAuth + Prisma Database : TiDB
         </p>
       </div>
 

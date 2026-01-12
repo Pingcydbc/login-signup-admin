@@ -112,8 +112,8 @@ export default function AdminPage() {
           
           <div className="mb-5 fade-in">
             <div style={{ fontSize: '36px', marginBottom: '12px' }}>🛠️</div>
-            <h1 className="h2 fw-bold mb-2">Admin Dashboard</h1>
-            <p className="text-muted">จัดการผู้ใช้ระบบ</p>
+                <h1 className="h2 fw-bold mb-2" style={{ color: '#4a00e0' }}>Admin Dashboard</h1>
+                <p className="text-muted">จัดการผู้ใช้ระบบ</p>
           </div>
 
           <div className="card shadow-lg border-0">

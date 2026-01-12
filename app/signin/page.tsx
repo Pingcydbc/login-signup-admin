@@ -55,8 +55,8 @@ export default function SignInPage() {
       <form onSubmit={handleSubmit} className="bg-white p-5 rounded-4 shadow-lg w-100 fade-in" style={{ maxWidth: "420px" }}>
         <div className="text-center mb-5">
           <div style={{ fontSize: '48px', marginBottom: '16px' }}>🔐</div>
-          <h1 className="h3 fw-bold mb-2">เข้าสู่ระบบ</h1>
-          <p className="text-muted small">ยินดีต้อนรับกลับมาอีกครั้ง!</p>
+                <h1 className="h3 fw-bold mb-2" style={{ color: '#764ba2' }}>เข้าสู่ระบบ</h1>
+                <p className="small" style={{ color: '#667eea' }}>ยินดีต้อนรับกลับมาอีกครั้ง!</p>
         </div>
         
         {error && <Alert type="danger" message={error} onClose={() => setError("")} />}
