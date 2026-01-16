@@ -14,7 +14,7 @@ export default async function Home() {
           Chayodom Login System
         </h1>
         <p className="lead" style={{ color: 'rgba(255,255,255,0.9)' }}>
-          Next.js + NextAuth + Prisma Database : TiDB
+          Next.js + NextAuth + Prisma / Database : RailwayDB
         </p>
       </div>
 
