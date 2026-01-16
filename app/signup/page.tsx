@@ -39,7 +39,7 @@ export default function SignUpPage() {
       <form onSubmit={handleSubmit} className="bg-white p-5 rounded-4 shadow-lg w-100 fade-in" style={{ maxWidth: "420px" }}>
         <div className="text-center mb-5">
           <div style={{ fontSize: '48px', marginBottom: '16px' }}>✨</div>
-          <h1 className="h3 fw-bold mb-2">สมัครสมาชิก</h1>
+          <h1 className="h2 fw-bold mb-2" style={{ color: '#764ba2' }}>สมัครสมาชิก</h1>
           <p className="text-muted small">เข้าร่วมกับเราเลย!</p>
         </div>
         
